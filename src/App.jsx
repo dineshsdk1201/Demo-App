@@ -60,7 +60,60 @@ function App(){
   return (
     <div style={{backgroundColor:"red"}}>
       {/*write html and css for nav bar with 4 links which gote to related w3 schools page */}
+     {/* style nav bar */}
+      <style>
+        {`
+        nav {
+          background-color: #f2f2f2;
+          padding: 10px;
+          text-align: center;
+          display: flex;
+          justify-content: flex-end;
+          gap: 20px;
+          font-size: 20px;
+          font-weight: bold;
+
+        
+
+        }
+        nav a {
+          text-decoration: none;
+          color: #000;
+          
+        }
+        a:hover {
+          color: green;
+        }
+        //style search bar and button
+        input {
+          padding: 10px;
+          margin: 10px;
+          width: 100%;
+          border: none;
+          border-radius: 5px;
+          //style even and odd rows with different colors
+          background-color: #f2f2f2;
+
+        }
+        button {
+          padding: 7px;
+          margin: 1px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+
+        }
+        `}
+
+      </style>
+
       <nav>
+        
+        <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
+        <button onClick={handleSearch}>Search</button>
+
         <a href="https://www.w3schools.com/html/">HTML</a>
         <a href="https://www.w3schools.com/css/">CSS</a>
         <a href="https://www.w3schools.com/js/">JavaScript</a>
