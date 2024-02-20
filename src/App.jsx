@@ -59,6 +59,15 @@ function App(){
       
   return (
     <div style={{backgroundColor:"red"}}>
+      {/*write html and css for nav bar with 4 links which gote to related w3 schools page */}
+      <nav>
+        <a href="https://www.w3schools.com/html/">HTML</a>
+        <a href="https://www.w3schools.com/css/">CSS</a>
+        <a href="https://www.w3schools.com/js/">JavaScript</a>
+        <a href="https://www.w3schools.com/react/">React</a>
+      </nav>  
+     
+
       <p>Hello React</p>
       <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
       <button onClick={handleSearch}>Search</button>
