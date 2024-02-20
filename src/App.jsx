@@ -58,7 +58,7 @@ function App(){
       }
       
   return (
-    <div>
+    <div style={{backgroundColor:"red"}}>
       <p>Hello React</p>
       <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
       <button onClick={handleSearch}>Search</button>
